@@ -1,0 +1,157 @@
+.container {
+  background-color: honeydew;
+  height: 100%;
+  width: 100%;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.title {
+  opacity: 0.8;
+  font-size: max(1rem, 1vw);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.user_container {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+  overflow-y: auto;
+}
+
+.item {
+}
+
+.item_detail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.6rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.image {
+  width: 6.5rem;
+  border-radius: 50%;
+}
+
+.userName {
+  opacity: 0.85;
+  font-size: max(0.95rem, 0.95vw);
+  font-weight: 600;
+}
+
+.btn {
+  height: fit-content;
+  font-size: max(0.65rem, 0.65vw);
+  font-weight: 600;
+  padding: 0.25rem 0.35rem;
+  background-color: var(--color-btn-bg-pri);
+  border-radius: 4px;
+  color: var(--color-text-pri);
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--color-btn-bg-pri-hover);
+  color: var(--color-btn-hover-text);
+}
+
+.btn:active {
+  outline: red ridge 1px;
+  transition: all 0.1s ease-out;
+}
+
+.msg {
+  font-weight: bold;
+}
+
+.cross {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .title {
+    font-size: max(1.1rem, 1.1vw);
+  }
+  .user_container {
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    padding-bottom: 0.3rem;
+  }
+
+  .image {
+    width: 4rem;
+  }
+  .item_detail {
+    flex-direction: column;
+  }
+
+  .cross {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    z-index: 1;
+    display: inline;
+  }
+  .cross:hover {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .title {
+    font-size: max(1.1rem, 1.1vw);
+  }
+  .user_container {
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    padding-bottom: 0.3rem;
+  }
+
+  .image {
+    width: 4rem;
+  }
+  .item_detail {
+    flex-direction: column;
+  }
+
+  .cross {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    z-index: 1;
+    display: inline;
+  }
+  .cross:hover {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+}

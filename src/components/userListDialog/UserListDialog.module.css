@@ -1,0 +1,62 @@
+.container {
+  width: 25vw;
+  height: 60vh;
+  padding: 1rem 8%;
+  overflow: auto;
+}
+
+.title {
+  font-size: max(1.3rem, 1.3vw);
+  font-weight: 600;
+  text-align: center;
+}
+.user_container {
+  margin-bottom: 1.5rem;
+
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+.image {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.userName {
+  font-size: max(1rem, 1vw);
+}
+
+.dummy {
+  flex: 1 1 auto;
+}
+
+.btn {
+  padding: 0.3rem 0.4rem;
+  font-size: max(0.9rem, 0.9vw);
+  border-radius: 4px;
+  background-color: var(--color-btn-bg-pri);
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(1);
+}
+
+.close_btn {
+  color: var(--color-btn-bg-pri);
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+.close_btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.close_btn:active {
+  transform: scale(1);
+  transition: all 0.2s ease-out;
+}

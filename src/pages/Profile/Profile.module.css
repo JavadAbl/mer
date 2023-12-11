@@ -1,0 +1,241 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.content_container {
+  flex: 1 1 auto;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.heading {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.heading_img {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  border: 0.0625rem solid black;
+}
+
+.heading_info {
+  flex: 0 0 25%;
+}
+
+.heading_info_username {
+  width: 100%;
+  font-size: max(1.7rem, 1.7vw);
+  font-weight: bold;
+  margin: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.heading_name {
+  font-size: max(1rem, 1vw);
+  max-width: 90%;
+  font-weight: 600;
+}
+
+.heading_bio {
+  opacity: 0.9;
+  font-size: max(0.9rem, 0.9vw);
+  text-align: justify;
+  max-width: 90%;
+  white-space: pre-wrap;
+  overflow-y: auto;
+}
+
+.heading_info_followers {
+  display: inline-block;
+  margin: 1rem;
+  font-size: max(1rem, 1vw);
+  text-align: center;
+}
+
+.heading_info_followers:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.heading_info_followers:active {
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.2s ease-out;
+}
+
+.heading_btn {
+  padding: 0.75rem 1rem;
+  margin-left: 1rem;
+  min-width: 8rem;
+  font-size: max(1rem, 1vw);
+  font-weight: 600;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px ridge var(--color-border);
+  -webkit-text-stroke: 0.015rem #ff5d99;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.heading_btn_primary {
+  background-color: var(--color-btn-bg-pri);
+  color: var(--color-btn-text-primary);
+}
+
+.heading_btn_primary:hover {
+  background-color: var(--color-btn-bg-pri-hover);
+  color: #ff5d99;
+}
+
+.heading_btn_sec {
+  background-color: var(--color-btn-bg-sec);
+  color: var(--color-btn-text-sec);
+}
+
+.heading_btn_sec:hover {
+  background-color: var(--color-btn-bg-sec-hover);
+  color: #ff5d99;
+}
+
+.container_posts {
+  position: relative;
+  min-height: 15rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.posts_title {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  border-top: var(--color-border) double 2px;
+}
+
+.post {
+  aspect-ratio: 1 / 1;
+}
+
+/* //-------------------------------------------- */
+@media (max-width: 480px) {
+  .container_posts {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .heading {
+    gap: 0.5rem;
+  }
+
+  .heading_info {
+    flex: 1 1 auto;
+  }
+  .heading_img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .heading_name {
+    max-width: none;
+    width: 85%;
+    font-size: max(0.9rem, 0.9vw);
+  }
+  .heading_bio {
+    max-width: none;
+    width: 90%;
+  }
+
+  .btn_container {
+    flex: 0 1 auto;
+  }
+  .heading_btn {
+    min-width: 6rem;
+    padding: 0.5rem 0.5rem;
+    font-size: max(0.8rem, 0.8vw);
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container_posts {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .heading {
+    gap: 0.5rem;
+  }
+
+  .heading_info {
+    flex: 1 1 auto;
+  }
+  .heading_img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .heading_name {
+    max-width: none;
+    width: 75%;
+    font-size: max(0.9rem, 0.9vw);
+  }
+  .heading_bio {
+    max-width: none;
+    width: 80%;
+  }
+
+  .btn_container {
+    flex: 0 1 auto;
+  }
+  .heading_btn {
+    min-width: 8rem;
+    padding: 1rem 0.5rem;
+    font-size: max(0.9rem, 0.9vw);
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .heading_info {
+    flex: 0 0 30%;
+  }
+  .heading_name {
+    max-width: none;
+    width: 90%;
+    font-size: max(0.9rem, 0.9vw);
+  }
+  .heading_bio {
+    max-width: none;
+    width: 95%;
+  }
+  .btn_container {
+    flex: 0 0 auto;
+  }
+  .heading_btn {
+    min-width: 8rem;
+    padding: 1rem 0.5rem;
+    font-size: max(0.9rem, 0.9vw);
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .heading_info {
+    flex: 0 0 35%;
+  }
+}
+
+@media (min-width: 1281px) {
+}

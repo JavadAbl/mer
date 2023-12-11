@@ -1,0 +1,103 @@
+.container {
+  padding: 0 1.2rem;
+  margin: 1.5rem 0;
+  color: var(--color-text-primary);
+}
+
+.user_container {
+  position: relative;
+  margin-bottom: 0.15rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: top;
+}
+
+.msg {
+  overflow: hidden;
+  white-space: nowrap;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: max(1.2rem, 1.2vw);
+  font-weight: 600;
+  font-style: italic;
+}
+
+.image {
+  display: inline;
+  max-width: 3vw;
+
+  border-radius: 50%;
+}
+
+.userName {
+  font-size: max(0.9rem, 0.9vw);
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.692);
+}
+
+.content {
+  font-size: max(0.9rem, 0.9vw);
+  font-weight: 400;
+}
+
+.date {
+  font-size: max(0.7rem, 0.7vw);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.user_btn_edit {
+  font-size: max(0.7rem, 0.7vw);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.user_btn_edit:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.user_btn_delete {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+
+  color: rgba(255, 0, 0, 0.699);
+  transition: all 0s;
+}
+
+.user_btn_delete:hover {
+  cursor: pointer;
+}
+
+.user_btn_delete:active {
+  transform: translate(-46%, -46%);
+}
+
+.edit_text {
+  font-size: max(0.9rem, 0.9vw);
+  width: 100%;
+  resize: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+.edit_btn_container {
+  text-align: right;
+}
+.edit_btn {
+  font-size: max(0.9rem, 0.9vw);
+  display: inline-block;
+  margin-right: 0.2rem;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+.edit_btn:hover {
+  outline: var(--color-border) solid 1px;
+  box-shadow: 0 0 1px 1px blue;
+}

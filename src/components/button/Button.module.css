@@ -1,0 +1,44 @@
+.btn {
+  height: 2rem;
+  min-width: 6rem;
+  border-radius: 4px;
+  border: none;
+  font-size: max(0.8rem, 0.8vw);
+  padding: 0.35rem;
+  float: right;
+  margin-right: 0.5rem;
+}
+
+.pri {
+  background-color: var(--color-btn-bg-pri);
+  color: var(--color-btn-text-pri);
+}
+.pri:hover {
+  background-color: var(--color-btn-bg-pri-hover);
+  color: var(--color-btn-hover-text);
+}
+.pri:active {
+  transform: scale(0.9);
+  transition: all 0.1s ease-out;
+}
+
+.sec {
+  background-color: var(--color-btn-bg-sec);
+  color: var(--color-btn-text-sec);
+  border: var(--color-border) solid 0.0625rem;
+}
+.sec:hover {
+  background-color: var(--color-btn-bg-sec-hover);
+  color: var(--color-btn-hover-text);
+}
+.sec:active {
+  transform: scale(0.9);
+  transition: all 0.1s ease-out;
+}
+.btn:disabled {
+  color: rgba(0, 0, 0, 0.5);
+  transform: none;
+  transition: none;
+  background-color: antiquewhite;
+  border: none;
+}
