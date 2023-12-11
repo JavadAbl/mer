@@ -1,4 +1,4 @@
-export const BASE_URL = "https://s9ypc4-8080.csb.app";
+export const BASE_URL = "https://gdg9wm-8080.csb.app";
 
 export const LOGIN_SLIDER_1 =
   "https://ipfs.filebase.io/ipfs/QmR19BcCWnh1WYrfvxRy9bcAcnzM3iFXK4Z9ih311Q2EJW";
