@@ -32,8 +32,8 @@ export default function Register() {
     initialValues: {
       name: "",
       userName: "",
-      email: "user@test.com",
-      password: "1234",
+      email: "",
+      password: "",
     },
     validationSchema: formSchema,
     onSubmit: (values) => {

@@ -105,13 +105,19 @@ export default function Feed() {
 
   if (!state.posts.length)
     return (
-      <>
+      <div className={`${styles.container}`}>
         <Navbar />
 
-        <Msg>
-          <p>{"No post to show \n Follow Some one to see their posts."}</p>
-        </Msg>
-      </>
+        <div className={`${styles.main_container}`}>
+          <Msg>
+            <p>{"No post to show \n Follow Some one to see their posts."}</p>
+          </Msg>
+        </div>
+
+        <aside className={`${styles.aside_container}`}>
+          <ProfileSuggest />
+        </aside>
+      </div>
     );
   return (
     <>

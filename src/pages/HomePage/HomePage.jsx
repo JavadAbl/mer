@@ -39,7 +39,7 @@ export default function HomePage() {
       <div className={`${styles.slider}`}>
         <main className={`${styles.main_container}`}>
           <b>Welcome To</b>
-          <h1 className={`${styles.main_h1}`}>Mern Social</h1>
+          <h1 className={`${styles.main_h1}`}>Merngram</h1>
           <p>{"Share your images and moments with your friends."}</p>
           <Link className={styles.btn} to={"/register"}>
             Register
