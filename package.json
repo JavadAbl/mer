@@ -1,6 +1,7 @@
 {
-  "name": "vite-react-starter",
-  "version": "0.0.0",
+  "name": "merngram client",
+   "author": "Mohammad Javad Abolhassani Far",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
