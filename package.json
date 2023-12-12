@@ -1,6 +1,6 @@
 {
-  "name": "merngram client",
-   "author": "Mohammad Javad Abolhassani Far",
+  "name": "merngram-client",
+  "author": "Mohammad Javad Abolhassani Far",
   "version": "1.0.0",
   "scripts": {
     "dev": "vite",
