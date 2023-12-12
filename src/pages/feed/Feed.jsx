@@ -109,7 +109,13 @@ export default function Feed() {
         <Navbar />
 
         <div className={`${styles.main_container}`}>
-          <Msg>
+          <Msg
+            attr={{
+              position: "static",
+              textAlign: "center",
+              fontWeight: "bold",
+            }}
+          >
             <p>{"No post to show \n Follow Some one to see their posts."}</p>
           </Msg>
         </div>

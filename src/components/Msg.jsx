@@ -1,4 +1,4 @@
-const style = {
+let style = {
   position: "absolute",
   top: "50%",
   left: "50%",
@@ -6,8 +6,10 @@ const style = {
   fontWeight: "bold",
   fontStyle: "italic",
   whiteSpace: "pre-line",
+  width: "fit-content",
 };
 
 export default function Msg({ children, attr }) {
+  if (attr) style = null;
   return <div style={{ ...style, ...attr }}>{children}</div>;
 }
