@@ -18,12 +18,13 @@
   align-items: center;
 }
 .image {
-  width: 15%;
+  width: 14%;
   border-radius: 50%;
 }
 
 .userName {
-  font-size: max(1rem, 1vw);
+  opacity: 0.80;
+  font-size: max(0.85rem, 0.85vw);
 }
 
 .dummy {
@@ -32,7 +33,7 @@
 
 .btn {
   padding: 0.3rem 0.4rem;
-  font-size: max(0.9rem, 0.9vw);
+  font-size: max(0.85rem, 0.85vw);
   border-radius: 4px;
   background-color: var(--color-btn-bg-pri);
 }
@@ -59,4 +60,29 @@
 .close_btn:active {
   transform: scale(1);
   transition: all 0.2s ease-out;
+}
+
+
+@media (max-width: 480px) {
+  .container {
+    width: 75vw;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    width:65vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width:50vw;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .container {
+    width:35vw;
+  }
 }

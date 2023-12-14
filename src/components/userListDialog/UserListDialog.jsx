@@ -80,7 +80,7 @@ export default function UserListDialog({ attr, title, userIds, hancleClose }) {
 
             <Spacer right={"0.5rem"} />
 
-            <Link className={styles.userName}>{user.userName}</Link>
+            <Link to={`/profile/${user._id}`} className={styles.userName}>{user.userName}</Link>
 
             <div className={styles.dummy}></div>
 
